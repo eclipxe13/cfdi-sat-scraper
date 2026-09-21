@@ -92,4 +92,4 @@ exit(call_user_func(new class () {
         'the resulting json can be stored as a source of true to perform the integration tests.', PHP_EOL,
         'The configuration options are the same as used on integration tests', PHP_EOL;
     }
-}, ...$argv));
+}, ...($argv ?? [])));

@@ -42,9 +42,14 @@ class RepositoryItem implements JsonSerializable
         return $this->state;
     }
 
-    /** @return array<string, mixed> */
+    /** @return array{uuid: string, type: string, state: string, date: DateTimeImmutable} */
     public function jsonSerialize(): array
     {
-        return get_object_vars($this);
+        return [
+            'uuid' => $this->uuid,
+            'type' => $this->type,
+            'state' => $this->state,
+            'date' => $this->date,
+        ];
     }
 }
