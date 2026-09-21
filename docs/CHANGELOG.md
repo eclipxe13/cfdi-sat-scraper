@@ -8,6 +8,18 @@ Usamos [Versionado Semántico 2.0.0](SEMVER.md) por lo que puedes usar esta libr
 
 No existen cambios aún no liberados en una versión.
 
+## Versión 5.0.4 2026-09-20
+
+- Se actualiza el año de la licencia a 2026.
+
+### Entorno de desarrollo
+
+- Se cambia `RepositoryItem#JsonSerializable()` para que no falle durante la revisión de análisis código.
+- En los archivos de trabajo de GitHub:
+  - Se ejecutan las acciones usando PHP 8.5.
+  - Se actualizan las versiones de las acciones.
+- Se actualizaron las herramientas de desarrollo.
+
 ## Versión 5.0.3 2025-12-12
 
 - Se cambian las dependencias de Symfony a la versión `7.4+` ó `8.0+`.
